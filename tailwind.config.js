@@ -1,35 +1,36 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
-    extend: {},
-  },
+
   daisyui: {
     themes: [
       {
         light: {
-          primary: "#0d3ab5",
-          secondary: "#000000",
-          accent: "#FFEDD5",
-          neutral: "#26302B",
-          "base-100": "#ffffff",
-          info: "#98A8DD",
-          success: "#1BBB70",
-          warning: "#DF7E07",
-          error: "#FA5C5C",
+          primary: "#0D3AB5", // Primary color
+          secondary: "#22252C", // Dark grey
+          accent: "#FFC107", // Amber
+          neutral: "#FFFFFF", // White
+          "base-100": "#F9FAFB", // Light grey
+          info: "#3B82F6", // Blue
+          success: "#10B981", // Green
+          warning: "#F59E0B", // Orange
+          error: "#EF4444", // Red
+          gray: "#00000099", // Default text color for light mode
+          GunmetalGray: "#22252C",
         },
       },
       {
         dark: {
-          primary: "#121212",
-          secondary: "#b3b3b3",
-          accent: "#4B5563",
-          neutral: "#F3F4F6",
-          "base-100": "#1F2937",
-          info: "#98A8DD",
-          success: "#1BBB70",
-          warning: "#FBBF24",
-          error: "#FA5C5C",
+          primary: "#1E3A8A", // New primary color
+          secondary: "#9CA3AF", // Light grey
+          accent: "#FFD700", // Gold
+          neutral: "#1F2937", // Dark grey for neutral background
+          "base-100": "#121826", // Very dark grey (almost black)
+          info: "#3B82F6", // Blue
+          success: "#10B981", // Green
+          warning: "#FBBF24", // Bright yellow
+          error: "#F87171", // Softer red
+          text: "#F3F4F6", // Default text color for dark mode
         },
       },
     ],

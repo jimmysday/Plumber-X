@@ -2,30 +2,34 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import Blog from "./Blog";
-import BlogsData from "../../../public/Blogs.json";
+import BlogsData from "../../../public/Blogs.json"; // Assuming Blogs.json is in the public directory
+
 const BlogDetail = () => {
-  const { id } = useParams(); // Destructure to get the id directly
-  const [blog, setBlog] = useState(null); // Use null as the initial state
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const { id } = useParams(); // Extract the id from the URL parameters
+  const [blog, setBlog] = useState(null); // State to store the blog post data
+  const [loading, setLoading] = useState(true); // State to manage loading state
+  const [error, setError] = useState(null); // State to manage error state
 
   useEffect(() => {
+    // Fetch the blog post data when the component mounts or id changes
     const fetchBlog = async () => {
       try {
-        const response = await axios.get("/Blogs.json"); // Adjust the path to the actual location of your JSON file
+        // Make an HTTP GET request to fetch the blog posts
+        const response = await axios.get("/Blogs.json");
+        // Find the blog post with the matching id
         const foundBlog = response.data.find(
           (blog) => blog.id === parseInt(id),
         );
-        setBlog(foundBlog);
+        setBlog(foundBlog); // Set the found blog post to the state
       } catch (error) {
-        setError("Error fetching blog post");
+        setError("Error fetching blog post"); // Set the error message in case of failure
       } finally {
-        setLoading(false);
+        setLoading(false); // Set loading to false after the request is completed
       }
     };
 
     fetchBlog();
-  }, [id]);
+  }, [id]); // Re-run the effect if the id changes
 
   if (loading) {
     return (
@@ -55,13 +59,16 @@ const BlogDetail = () => {
 
   return (
     <div>
-      <div className="bg-primary py-8 h-[439px] -mb-20">
+      {/* Header section */}
+      <div className="bg-primary lg:py-8 sm:h-[400px] h-[300px] -mb-20">
         <div className="text-center md:text-left relative mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-xl">
-          <h2 className="text-6xl md:text-7xl font-bold text-white inline-block px-4 py-2 rounded-t-md mt-20">
+          <h2 className="text-5xl md:text-7xl font-bold text-neutral inline-block px-4 py-2 rounded-t-md mt-20 figtree_font">
             Blog
           </h2>
         </div>
       </div>
+
+      {/* Blog content section */}
       <div className="flex justify-center mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-lg">
         <article className="relative w-full overflow-hidden shadow transition hover:shadow-lg">
           <img
@@ -72,24 +79,28 @@ const BlogDetail = () => {
 
           <div className="relative bg-gradient-to-t from-primary to-transparent pt-32 sm:pt-48">
             <div className="p-4 sm:p-6">
-              <div className="block text-xs text-white">
-                <span className="text-5xl font-bold">{blog?.day}</span>
+              <div className="block text-xs text-neutral">
+                <span className="text-5xl font-semibold md:font-bold">
+                  {blog?.day}
+                </span>
                 <span className="uppercase font-semibold block text-base tracking-[6px] ml-1.5">
                   {blog?.month}
                 </span>
               </div>
 
-              <h3 className="mt-6 font-bold text-xl text-white">
+              <h3 className="mt-6 font-semibold text-xl text-neutral figtree_font">
                 {blog?.title || "PLUMBING MAINTENANCE FOR YOUR HOME"}
               </h3>
             </div>
           </div>
         </article>
       </div>
-      <div className="my-16">
+
+      {/* Blog body section */}
+      <div className="my-16 mx-4">
         <div className="max-w-screen-md mx-auto">
           <div dangerouslySetInnerHTML={{ __html: blog?.body }} />
-          <div className="flex gap-x-5 mt-16">
+          <div className="flex gap-x-5 mt-12">
             <p className="font-medium text-base">Share</p>
             <div className="flex gap-x-2">
               <a href="#">
@@ -102,7 +113,7 @@ const BlogDetail = () => {
               <a href="#">
                 <img
                   className="h-[20px] w-auto"
-                  src="https://assets-global.website-files.com/654db8e1ea37faf3593d0817/65a51a98384771b2a560dba7_social.png"
+                  src="https://assets-global.website-files.com/654db8e1ea37faf3593d0817/659cd6c7f23a24a6056c3f1d_instagram.png"
                   alt="Share on social media"
                 />
               </a>
@@ -117,7 +128,8 @@ const BlogDetail = () => {
           </div>
         </div>
       </div>
-      {/* Related Post  */}
+
+      {/* Related posts section */}
       <div className="px-4 mx-auto max-w-screen-xl">
         <h2 className="text-xl font-semibold mb-8">Related Post</h2>
         <div className="pb-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-start mx-auto max-w-screen-xl">

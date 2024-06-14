@@ -1,7 +1,7 @@
 import Member1 from "../../assets/Images/member-1.png";
 import team_member_BG from "../../assets/Images/Team_Member-BG.png";
-
-const OurTeam = () => {
+const TeamMembers = () => {
+  // Array of team member data
   const teamMembers = [
     { name: "Guy <br> Hawkins", title: "Plumber" },
     { name: "Esther <br> Howard", title: "Plumber" },
@@ -9,40 +9,31 @@ const OurTeam = () => {
   ];
 
   return (
-    <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      <div>
-        <h3 className="font-bold text-base text-center text-primary">
-          Our Approach
-        </h3>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-bold mt-3 mb-8">
-          What to expect from us
-        </h1>
-        <p className="text-center text-gray-600">
-          While certain plumbing issues, such as a minor toilet clog or a
-          dripping faucet, can be quickly addressed with simple do-it-yourself
-          methods, it's essential to recognize that many plumbing problems are
-          complex and require the expertise of a professional plumber.
-        </p>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-16 my-16 px-4">
+    <div className="mx-auto max-w-screen-xl">
+      <div className="grid bg-neutral px-4 lg:px-10 md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 pt-24 pb-10 md:mx-0 lg:mx-4">
+        {/* Mapping array */}
         {teamMembers.map((member, index) => (
           <div key={index}>
             <div
               style={{ backgroundImage: `url(${team_member_BG})` }}
-              className="relative overflow-hidden rounded shadow transition hover:shadow-lg h-96"
+              className="relative overflow-hidden bg-cover rounded-sm shadow transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-lg h-[475px]"
             >
               <img
                 alt=""
                 src={Member1}
-                className="absolute inset-0 w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500"
+                className="absolute inset-0 mt-20 mx-auto bg-center transition-all duration-500 transform hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary to-transparent">
-                <div className="absolute bottom-0 p-4 sm:p-6">
+
+              {/* Gradient overlay with team member's name and title */}
+              <div className="h-[475px] relative bg-gradient-to-t from-primary/60 to-transparent transition-opacity duration-500 ease-in-out hover:from-primary/80">
+                <div className="p-4 sm:p-6 absolute bottom-0">
+                  {/* Team member's name with HTML rendering for line breaks */}
                   <h1
                     dangerouslySetInnerHTML={{ __html: member.name }}
-                    className="text-2xl sm:text-3xl md:text-4xl font-bold text-white"
+                    className="text-[45px] font-semibold leading-tight text-neutral figtree_font"
                   />
-                  <p className="mt-2 sm:mt-4 text-base sm:text-lg text-white">
+
+                  <p className="mt-3 text-xl text-neutral leading-tight figtree_font">
                     {member.title}
                   </p>
                 </div>
@@ -51,18 +42,8 @@ const OurTeam = () => {
           </div>
         ))}
       </div>
-      <p className="text-center text-gray-600">
-        Embark on a rewarding journey with us. Join our diverse and passionate
-        team, where collaboration sparks creativity, and together, we shape a
-        brighter future.
-      </p>
-      <div className="mt-6 text-center">
-        <button className="rounded bg-primary text-base font-semibold text-white px-10 py-2">
-          Join our team
-        </button>
-      </div>
     </div>
   );
 };
 
-export default OurTeam;
+export default TeamMembers;

@@ -1,0 +1,114 @@
+Date : 2024-06-14 15:19:38
+Directory : d:\Projects\plumber
+Total : 56 files,  8348 codes, 196 comments, 219 blanks, all 8763 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| JSON           |          3 |      5,710 |          0 |          3 |      5,713 |
+| JavaScript JSX |         43 |      2,486 |        186 |        193 |      2,865 |
+| JavaScript     |          4 |         69 |          2 |          6 |         77 |
+| CSS            |          2 |         40 |          7 |         12 |         59 |
+| HTML           |          1 |         36 |          1 |          1 |         38 |
+| Markdown       |          1 |          5 |          0 |          4 |          9 |
+| XML            |          2 |          2 |          0 |          0 |          2 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                   |         56 |      8,348 |        196 |        219 |      8,763 |
+| . (Files)                                                           |          8 |      5,776 |          3 |         13 |      5,792 |
+| public                                                              |          2 |         45 |          0 |          1 |         46 |
+| src                                                                 |         46 |      2,527 |        193 |        205 |      2,925 |
+| src (Files)                                                         |          3 |         51 |          7 |         14 |         72 |
+| src\Components                                                      |         30 |      2,206 |        173 |        162 |      2,541 |
+| src\Components (Files)                                              |          1 |        131 |          7 |          8 |        146 |
+| src\Components\About                                                |          4 |        190 |         12 |         15 |        217 |
+| src\Components\Blogs                                                |          6 |        211 |         67 |         25 |        303 |
+| src\Components\Blogs (Files)                                        |          4 |        211 |         13 |         20 |        244 |
+| src\Components\Blogs\BlogsForHomePage                               |          2 |          0 |         54 |          5 |         59 |
+| src\Components\Contact                                              |          1 |        168 |         10 |          9 |        187 |
+| src\Components\Home                                                 |          5 |        535 |         18 |         24 |        577 |
+| src\Components\Pricing                                              |          2 |        148 |          6 |          7 |        161 |
+| src\Components\Services                                             |          3 |        300 |         22 |         30 |        352 |
+| src\Components\Shared                                               |          6 |        443 |         24 |         35 |        502 |
+| src\Components\Team                                                 |          2 |         80 |          7 |          9 |         96 |
+| src\Layout                                                          |          1 |         17 |          0 |          3 |         20 |
+| src\Pages                                                           |          9 |        179 |         13 |         18 |        210 |
+| src\Pages\About                                                     |          1 |         35 |          2 |          3 |         40 |
+| src\Pages\Blog                                                      |          1 |         13 |          1 |          3 |         17 |
+| src\Pages\BlogDetails                                               |          1 |         14 |          1 |          1 |         16 |
+| src\Pages\Contact                                                   |          1 |         22 |          2 |          1 |         25 |
+| src\Pages\Home                                                      |          1 |         23 |          1 |          1 |         25 |
+| src\Pages\Pricing                                                   |          1 |         22 |          2 |          2 |         26 |
+| src\Pages\Services                                                  |          2 |         28 |          2 |          4 |         34 |
+| src\Pages\Team                                                      |          1 |         22 |          2 |          3 |         27 |
+| src\Router                                                          |          2 |         73 |          0 |          8 |         81 |
+| src\assets                                                          |          1 |          1 |          0 |          0 |          1 |
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                            | language       | code       | comment    | blank      | total      |
++---------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| d:\Projects\plumber\.eslintrc.cjs                                   | JavaScript     |         21 |          0 |          1 |         22 |
+| d:\Projects\plumber\README.md                                       | Markdown       |          5 |          0 |          4 |          9 |
+| d:\Projects\plumber\index.html                                      | HTML           |         36 |          1 |          1 |         38 |
+| d:\Projects\plumber\package-lock.json                               | JSON           |      5,624 |          0 |          1 |      5,625 |
+| d:\Projects\plumber\package.json                                    | JSON           |         42 |          0 |          1 |         43 |
+| d:\Projects\plumber\postcss.config.js                               | JavaScript     |          6 |          0 |          1 |          7 |
+| d:\Projects\plumber\public\Blogs.json                               | JSON           |         44 |          0 |          1 |         45 |
+| d:\Projects\plumber\public\vite.svg                                 | XML            |          1 |          0 |          0 |          1 |
+| d:\Projects\plumber\src\App.css                                     | CSS            |         37 |          7 |         12 |         56 |
+| d:\Projects\plumber\src\Components\About\BasicInfo.jsx              | JavaScript JSX |         49 |          2 |          3 |         54 |
+| d:\Projects\plumber\src\Components\About\FanFacts.jsx               | JavaScript JSX |         65 |          4 |          3 |         72 |
+| d:\Projects\plumber\src\Components\About\HappyClients.jsx           | JavaScript JSX |         35 |          2 |          4 |         41 |
+| d:\Projects\plumber\src\Components\About\OurTeam.jsx                | JavaScript JSX |         41 |          4 |          5 |         50 |
+| d:\Projects\plumber\src\Components\Blogs\Blog.jsx                   | JavaScript JSX |         34 |          4 |          4 |         42 |
+| d:\Projects\plumber\src\Components\Blogs\BlogDetail.jsx             | JavaScript JSX |         33 |          2 |          5 |         40 |
+| d:\Projects\plumber\src\Components\Blogs\Blogs.jsx                  | JavaScript JSX |        107 |          3 |          6 |        116 |
+| d:\Projects\plumber\src\Components\Blogs\BlogsForHomePage\Blog.jsx  | JavaScript JSX |          0 |         27 |          3 |         30 |
+| d:\Projects\plumber\src\Components\Blogs\BlogsForHomePage\Blogs.jsx | JavaScript JSX |          0 |         27 |          2 |         29 |
+| d:\Projects\plumber\src\Components\Blogs\LatestBlogs.jsx            | JavaScript JSX |         37 |          4 |          5 |         46 |
+| d:\Projects\plumber\src\Components\Contact\ContactForm.jsx          | JavaScript JSX |        168 |         10 |          9 |        187 |
+| d:\Projects\plumber\src\Components\Home\FunFacts.jsx                | JavaScript JSX |         67 |          4 |          6 |         77 |
+| d:\Projects\plumber\src\Components\Home\HeroSection.jsx             | JavaScript JSX |         62 |          4 |          5 |         71 |
+| d:\Projects\plumber\src\Components\Home\OurApproach.jsx             | JavaScript JSX |         70 |          2 |          4 |         76 |
+| d:\Projects\plumber\src\Components\Home\ServicesSlider.jsx          | JavaScript JSX |        218 |          7 |          5 |        230 |
+| d:\Projects\plumber\src\Components\Home\Testimonials.jsx            | JavaScript JSX |        118 |          1 |          4 |        123 |
+| d:\Projects\plumber\src\Components\NavbarForPhone.jsx               | JavaScript JSX |        131 |          7 |          8 |        146 |
+| d:\Projects\plumber\src\Components\Pricing\HappyClients.jsx         | JavaScript JSX |         31 |          2 |          3 |         36 |
+| d:\Projects\plumber\src\Components\Pricing\PricingTabs.jsx          | JavaScript JSX |        117 |          4 |          4 |        125 |
+| d:\Projects\plumber\src\Components\Services\AllServices.jsx         | JavaScript JSX |         21 |          2 |          3 |         26 |
+| d:\Projects\plumber\src\Components\Services\Service.jsx             | JavaScript JSX |         58 |          6 |          8 |         72 |
+| d:\Projects\plumber\src\Components\Services\ServiceDetail.jsx       | JavaScript JSX |        221 |         14 |         19 |        254 |
+| d:\Projects\plumber\src\Components\Shared\FAQ.jsx                   | JavaScript JSX |         63 |          5 |          5 |         73 |
+| d:\Projects\plumber\src\Components\Shared\Footer.jsx                | JavaScript JSX |         83 |          5 |          7 |         95 |
+| d:\Projects\plumber\src\Components\Shared\Location.jsx              | JavaScript JSX |        112 |          9 |          9 |        130 |
+| d:\Projects\plumber\src\Components\Shared\Navbar.jsx                | JavaScript JSX |        123 |          0 |          6 |        129 |
+| d:\Projects\plumber\src\Components\Shared\NotFound.jsx              | JavaScript JSX |         27 |          1 |          4 |         32 |
+| d:\Projects\plumber\src\Components\Shared\WhyChooseUs.jsx           | JavaScript JSX |         35 |          4 |          4 |         43 |
+| d:\Projects\plumber\src\Components\Team\Quote.jsx                   | JavaScript JSX |         36 |          3 |          3 |         42 |
+| d:\Projects\plumber\src\Components\Team\TeamMembers.jsx             | JavaScript JSX |         44 |          4 |          6 |         54 |
+| d:\Projects\plumber\src\Layout\Root.jsx                             | JavaScript JSX |         17 |          0 |          3 |         20 |
+| d:\Projects\plumber\src\Pages\About\About.jsx                       | JavaScript JSX |         35 |          2 |          3 |         40 |
+| d:\Projects\plumber\src\Pages\BlogDetails\BlogDetails.jsx           | JavaScript JSX |         14 |          1 |          1 |         16 |
+| d:\Projects\plumber\src\Pages\Blog\Blog.jsx                         | JavaScript JSX |         13 |          1 |          3 |         17 |
+| d:\Projects\plumber\src\Pages\Contact\Contact.jsx                   | JavaScript JSX |         22 |          2 |          1 |         25 |
+| d:\Projects\plumber\src\Pages\Home\Home.jsx                         | JavaScript JSX |         23 |          1 |          1 |         25 |
+| d:\Projects\plumber\src\Pages\Pricing\Pricing.jsx                   | JavaScript JSX |         22 |          2 |          2 |         26 |
+| d:\Projects\plumber\src\Pages\Services\ServiceDetails.jsx           | JavaScript JSX |         14 |          1 |          3 |         18 |
+| d:\Projects\plumber\src\Pages\Services\Services.jsx                 | JavaScript JSX |         14 |          1 |          1 |         16 |
+| d:\Projects\plumber\src\Pages\Team\Team.jsx                         | JavaScript JSX |         22 |          2 |          3 |         27 |
+| d:\Projects\plumber\src\Router\Router.jsx                           | JavaScript JSX |         63 |          0 |          3 |         66 |
+| d:\Projects\plumber\src\Router\ScrollToTop.jsx                      | JavaScript JSX |         10 |          0 |          5 |         15 |
+| d:\Projects\plumber\src\assets\react.svg                            | XML            |          1 |          0 |          0 |          1 |
+| d:\Projects\plumber\src\index.css                                   | CSS            |          3 |          0 |          0 |          3 |
+| d:\Projects\plumber\src\main.jsx                                    | JavaScript JSX |         11 |          0 |          2 |         13 |
+| d:\Projects\plumber\tailwind.config.js                              | JavaScript     |         37 |          1 |          2 |         40 |
+| d:\Projects\plumber\vite.config.js                                  | JavaScript     |          5 |          1 |          2 |          8 |
+| Total                                                               |                |      8,348 |        196 |        219 |      8,763 |
++---------------------------------------------------------------------+----------------+------------+------------+------------+------------+

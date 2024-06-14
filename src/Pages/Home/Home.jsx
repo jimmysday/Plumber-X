@@ -9,12 +9,13 @@ import WhyChooseUs from "../../Components/Shared/WhyChooseUs";
 const Home = () => {
   return (
     <div>
-      {/* <HeroSection /> */}
+      {/* components  */}
+      <HeroSection />
       <OurApproach />
       <ServicesSlider />
       <FunFacts />
       <Testimonials />
-      <LatestBlogs/>
+      <LatestBlogs />
       <WhyChooseUs />
       <Location />
     </div>

@@ -6,6 +6,7 @@ import Location from "../../Components/Shared/Location";
 const ServiceDetails = () => {
   return (
     <div>
+      {/* components  */}
       <ServiceDetail />
       <WhyChooseUs />
       <Location />

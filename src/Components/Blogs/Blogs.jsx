@@ -1,34 +1,46 @@
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Blog from "./Blog";
 import BlogsData from "../../../public/Blogs.json";
-import { Link } from "react-router-dom";
+import "aos/dist/aos.css";
+import AOS from "aos";
+import Loading from "../Shared/Loading";
 
 const Blogs = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
+
+  const [blogsToShow, setBlogsToShow] = useState(6);
+  const [loading, setLoading] = useState(false);
   // Split the BlogsData into appropriate parts
   const firstBlog = BlogsData.slice(0, 1);
   const secondBlog = BlogsData.slice(1, 2);
-  const otherBlogs = BlogsData.slice(1, 6);
-  console.log(firstBlog);
+  const otherBlogs = BlogsData.slice(2, BlogsData.length);
 
+  const handleLoadMore = () => {
+    setLoading(true);
+    setBlogsToShow((prev) => prev + 10);
+    setLoading(false);
+  };
+  if (loading) {
+    return <Loading />;
+  }
   return (
-    <div>
-      <div className="bg-primary lg:py-8 sm:h-[400px] h-[300px] -mb-20">
-        <div className="text-center md:text-left relative mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-xl">
-          <h2 className="text-5xl md:text-7xl font-bold text-neutral inline-block px-4 py-2 rounded-t-md mt-20 figtree_font">
-            Blog
-          </h2>
-        </div>
-      </div>
-
+    <div className="overflow-hidden mb-8">
       {/* Top Blogs */}
-      <div className="lg:grid grid-flow-row-dense lg:grid-cols-3 grid-cols-2 hidden gap-8 mx-auto max-w-screen-xl mb-8">
+      <div className="lg:grid grid-flow-row-dense lg:grid-cols-3 grid-cols-2 hidden gap-8 mx-auto max-w-screen-xl mb-8 transition">
         {firstBlog.map((data) => (
           <article
             key={data.id}
-            className="lg:col-span-2 relative overflow-hidden shadow transition hover:shadow-lg w-full"
+            className="lg:col-span-2 relative overflow-hidden shadow w-full duration-300"
+            data-aos="fade-up"
           >
             <img
               alt=""
-              src="https://assets-global.website-files.com/6555a58bd247940a6073a360/664b12d631cbc6b02fe6de59_A%20man%20is%20working-p-500.jpeg"
+              src={data.image}
               className="absolute inset-0 w-full h-full object-top object-cover"
             />
             <div
@@ -39,20 +51,18 @@ const Blogs = () => {
               }}
             >
               <div className="p-4 sm:p-6">
-                <time
-                  dateTime={data.date}
-                  className="block text-xs text-neutral/90"
+                <div className="block text-xs text-neutral/90">
+                  <span className="text-5xl font-bold">{data.day}</span>
+                  <span className="figtree_font font-semibold block text-base tracking-[8px] uppercase">
+                    {data.month}
+                  </span>
+                </div>
+
+                <Link
+                  to={`/blog/details/${data.title
+                    .replace(/\s+/g, "-")
+                    .toLowerCase()}`}
                 >
-                  <span className="text-5xl font-bold">
-                    {new Date(data.date).getDate()}
-                  </span>
-                  <span className="font-semibold block text-base tracking-[10px] figtree_font">
-                    {new Date(data.date).toLocaleString("default", {
-                      month: "short",
-                    })}
-                  </span>
-                </time>
-                <Link to={`/blog/details/${data.id}`}>
                   <h3 className="mt-6 figtree_font text-xl text-neutral">
                     {data.title}
                   </h3>
@@ -64,12 +74,13 @@ const Blogs = () => {
         {secondBlog.map((data) => (
           <article
             key={data.id}
-            className="relative overflow-hidden shadow transition hover:shadow-lg"
+            className="relative overflow-hidden shadow duration-300 hover:shadow-lg hover:-translate-y-1 transition"
+            data-aos="fade-up"
           >
             <img
               alt=""
-              src="https://assets-global.website-files.com/6555a58bd247940a6073a360/664b12d631cbc6b02fe6de59_A%20man%20is%20working-p-500.jpeg"
-              className="absolute inset-0 w-full h-full object-cover"
+              src={data.image}
+              className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 hover:opacity-75"
             />
             <div
               className="relative bg-gradient-to-t from-primary to-transparent pt-32 sm:pt-48"
@@ -80,16 +91,16 @@ const Blogs = () => {
             >
               <div className="p-4 sm:p-6">
                 <div className="block text-xs text-neutral/90">
-                  <span className="text-5xl font-bold">
-                    {new Date(data.date).getDate()}
-                  </span>
-                  <span className="font-semibold block text-base tracking-[8px] figtree_font uppercase">
-                    {new Date(data.date).toLocaleString("default", {
-                      month: "short",
-                    })}
+                  <span className="text-5xl font-bold">{data.day}</span>
+                  <span className="figtree_font font-semibold block text-base tracking-[8px] uppercase">
+                    {data.month}
                   </span>
                 </div>
-                <Link to={`/blog/details/${data.id}`}>
+                <Link
+                  to={`/blog/details/${data.title
+                    .replace(/\s+/g, "-")
+                    .toLowerCase()}`}
+                >
                   <h3 className="mt-6 figtree_font text-xl text-neutral">
                     {data.title}
                   </h3>
@@ -102,11 +113,27 @@ const Blogs = () => {
 
       {/* Other Blogs */}
       <div className="mx-auto max-w-screen-xl">
-        <div className="pb-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-center justify-start mx-4 lg:mx-0">
-          {otherBlogs.map((data) => (
-            <Blog key={data.title} data={data} />
+        <div className="pb-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-center justify-start mx-4 lg:mx-0">
+          {otherBlogs.slice(0, blogsToShow).map((data, index) => (
+            <div key={index} data-aos="fade-up">
+              <Blog data={data} />
+            </div>
           ))}
         </div>
+      </div>
+      <div className="text-center">
+        {blogsToShow < otherBlogs.length ? (
+          <button
+            onClick={handleLoadMore}
+            className="text-xl text-primary font-medium figtree_font hover:scale-110 translate transition duration-300"
+          >
+            Load more
+          </button>
+        ) : (
+          <p className="text-xl  font-medium text-gray-400 figtree_font">
+            No more blogs to show.
+          </p>
+        )}
       </div>
     </div>
   );

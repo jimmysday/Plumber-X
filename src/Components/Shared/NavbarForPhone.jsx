@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { IoCall } from "react-icons/io5";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link, NavLink } from "react-router-dom";
 
 const NavbarForPhone = () => {
-  const [menuOpen, setMenuOpen] = useState(false); // State to manage menu open/close
+  const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null); // Ref to handle click outside the menu
 
   // Function to handle clicks outside the menu
@@ -20,18 +21,16 @@ const NavbarForPhone = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
-
+  const navItemStyle = `py-2 text-base font-semibold rounded-lg hover:underline underline-offset-8 focus:outline-none focus:shadow-outline`;
   return (
     <div>
-      <div className="navbar bg-primary lg:hidden md:py-6">
+      <div className="navbar bg-primary lg:hidden md:py-6  ">
         {/* Logo */}
         <div className="navbar-start">
-          <Link
-            to="/"
-            className="text-lg font-semibold tracking-widest uppercase rounded-lg focus:outline-none focus:shadow-outline"
-          >
-            <img
-              className="lg:h-auto md:h-10"
+          <Link to="/">
+            <LazyLoadImage
+              effect="blur"
+              className="sm:h-7 "
               src="https://assets-global.website-files.com/654db8e1ea37faf3593d0817/6555a221f45bcbd11acc33ec_logo.png"
               alt="logo"
             />
@@ -67,77 +66,57 @@ const NavbarForPhone = () => {
             {menuOpen && (
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                className="menu  menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
                 <li>
-                  <NavLink
-                    className="py-2 text-base font-semibold rounded-lg hover:underline underline-offset-8 focus:outline-none focus:shadow-outline"
-                    to="/"
-                  >
+                  <NavLink className={navItemStyle} to="/">
                     Home
                   </NavLink>
                 </li>
                 <li>
-                  <Link
-                    className="py-2 text-base font-semibold rounded-lg hover:underline underline-offset-8 focus:outline-none focus:shadow-outline"
-                    to="/about"
-                  >
+                  <Link className={navItemStyle} to="/about">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    className="py-2 text-base font-semibold rounded-lg hover:underline underline-offset-8 focus:outline-none focus:shadow-outline"
-                    to="/services"
-                  >
+                  <Link className={navItemStyle} to="/services">
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    className="py-2 text-base font-semibold rounded-lg hover:underline underline-offset-8 focus:outline-none focus:shadow-outline"
-                    to="/blogs"
-                  >
+                  <Link className={navItemStyle} to="/blogs">
                     Blogs
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    className="py-2 text-base font-semibold rounded-lg hover:underline underline-offset-8 focus:outline-none focus:shadow-outline"
-                    to="/contact"
-                  >
+                  <Link className={navItemStyle} to="/contact">
                     Contact
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    className="py-2 text-base font-semibold rounded-lg hover:underline underline-offset-8 focus:outline-none focus:shadow-outline"
-                    to="/pricing"
-                  >
+                  <Link className={navItemStyle} to="/pricing">
                     Pricing
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    className="py-2 text-base font-semibold rounded-lg hover:underline underline-offset-8 focus:outline-none focus:shadow-outline"
-                    to="/team"
-                  >
+                  <Link className={navItemStyle} to="/team">
                     Team
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to=""
-                    className="py-2 text-base font-semibold rounded-lg hover:underline underline-offset-8 focus:outline-none focus:shadow-outline flex items-center gap-2"
+                  <a
+                    href="tel:(303)555-0107"
+                    className="px-4 py-2 mt-2 text-base font-semibold rounded-lg md:mt-0 md:ml-2 hover:underline underline-offset-8 focus:outline-none focus:shadow-outline flex items-center gap-2"
                   >
-                    <IoCall /> 123-456-789
-                  </Link>
+                    <IoCall /> (303)555-0107
+                  </a>
                 </li>
               </ul>
             )}
           </div>
         </div>
       </div>
+      <hr className="w-full lg:hidden" />
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import LatestBlogs from "../../Components/Blogs/LatestBlogs";
 import FunFacts from "../../Components/Home/FunFacts";
 import HeroSection from "../../Components/Home/HeroSection";
@@ -9,7 +10,10 @@ import WhyChooseUs from "../../Components/Shared/WhyChooseUs";
 const Home = () => {
   return (
     <div>
-      {/* components  */}
+      <Helmet>
+        <title>Home</title>
+      </Helmet>
+      {/*others components  */}
       <HeroSection />
       <OurApproach />
       <ServicesSlider />

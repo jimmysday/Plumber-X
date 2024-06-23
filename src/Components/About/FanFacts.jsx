@@ -1,5 +1,13 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const FanFacts = () => {
-  // Array of objects for  data
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+    });
+  }, []);
+  // Array of objects for data
   const sections = [
     {
       heading: "Background",
@@ -19,9 +27,9 @@ const FanFacts = () => {
   ];
 
   return (
-    <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-screen-xl overflow-hidden mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <div className="grid gap-5 lg:gap-20 grid-cols-1 lg:grid-cols-2">
-        <div className="px-4">
+        <div className="px-4" data-aos="fade-up">
           <p className="text-base text-primary font-bold mb-4 text-center md:text-left">
             Why Choose Us?
           </p>
@@ -31,15 +39,23 @@ const FanFacts = () => {
           </h1>
           <div className="py-8 md:py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="text-center md:border-r md:border-gray-300">
+              <div
+                className="text-center md:border-r md:border-gray-300"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 <p className="text-4xl sm:text-5xl font-bold leading-none text-primary">
-                  640+
+                 640+
                 </p>
                 <p className="text-base mt-4 sm:mt-6 text-gray-800">
                   Faucets Fixed
                 </p>
               </div>
-              <div className="text-center">
+              <div
+                className="text-center"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
                 <p className="text-4xl sm:text-5xl font-bold leading-none text-primary">
                   640+
                 </p>
@@ -50,7 +66,7 @@ const FanFacts = () => {
             </div>
           </div>
         </div>
-        <div className="px-4 figtree_font">
+        <div className="px-4 figtree_font" data-aos="fade-up">
           {/* Mapping array */}
           {sections.map((section, index) => (
             <div key={index} className="mb-8">

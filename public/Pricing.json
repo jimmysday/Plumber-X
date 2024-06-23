@@ -1,0 +1,46 @@
+{
+  "plans": [
+    {
+      "name": "Basic Plan",
+      "price": "$30.00 USD",
+      "description": "The Basic Plan provides essential plumbing services tailored for small households. This plan includes professional leak repair, fixture installation, drain cleaning, toilet repair, faucet replacement, sink unclogging, and pipe insulation. It's ideal for homeowners looking for reliable plumbing maintenance at an affordable price.",
+      "features": [
+        "Leak Repair",
+        "Fixture Installation",
+        "Drain Cleaning",
+        "Toilet Repair",
+        "Faucet Replacement",
+        "Sink Unclogging",
+        "Pipe Insulation"
+      ]
+    },
+    {
+      "name": "Standard Plan",
+      "price": "$80.00 USD",
+      "description": "The Standard Plan offers comprehensive plumbing services suitable for medium-sized homes. It includes emergency plumbing service for urgent issues, water heater maintenance to ensure optimal performance, pipe replacement for aging infrastructure, garbage disposal repair, shower head installation for upgraded bathroom fixtures, sump pump inspection, and gas line repair. This plan is designed for homeowners seeking enhanced plumbing solutions and peace of mind.",
+      "features": [
+        "Emergency Plumbing Service",
+        "Water Heater Maintenance",
+        "Pipe Replacement",
+        "Garbage Disposal Repair",
+        "Shower Head Installation",
+        "Sump Pump Inspection",
+        "Gas Line Repair"
+      ]
+    },
+    {
+      "name": "Premium Plan",
+      "price": "$150.00 USD",
+      "description": "The Premium Plan delivers top-tier plumbing services with premium support for discerning homeowners. It includes comprehensive leak repair, emergency plumbing service available round-the-clock, fixture installation for upgraded home aesthetics, water heater maintenance to prevent breakdowns, pipe replacement using durable materials, thorough drain cleaning for clog-free pipes, and premium 24/7 support for immediate assistance. This plan is ideal for homeowners who value quality craftsmanship and exceptional service.",
+      "features": [
+        "Leak Repair",
+        "Emergency Plumbing Service",
+        "Fixture Installation",
+        "Water Heater Maintenance",
+        "Pipe Replacement",
+        "Drain Cleaning",
+        "Premium 24/7 Support"
+      ]
+    }
+  ]
+}

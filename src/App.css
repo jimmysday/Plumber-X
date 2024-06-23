@@ -9,7 +9,12 @@ body .dark {
   /* Uncomment if dark mode background color is needed */
   /* background-color: #1a1a1a; */
 }
-
+body {
+  margin-top: -6px;
+}
+html {
+  scroll-behavior: smooth;
+}
 /* FAQ Page */
 .space-y-4 > *:not(:last-child) {
   margin-bottom: 1rem;
@@ -52,4 +57,31 @@ body .dark {
 /* Active State for Navbar */
 .active {
   text-decoration: underline;
+}
+
+/* scroll Bar  */
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #bcbdbf; /* Color of the scrollbar track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0d3ab5; /* Color of the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar handle on hover */
+}
+/* for hide phone number  */
+@media (min-width: 1024px) and (max-width: 1153px) {
+  .phoneNumber {
+    display: none;
+  }
 }

@@ -1,7 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import contact_form_plumber_image from "../../assets/Images/contact_form_plumber_image.png";
 const ContactForm = () => {
+  useEffect(() => {
+    AOS.init({ once: true }); // Initialize AOS with the option to animate only once
+  }, []);
+
   // React Hook Form methods
   const {
     register,
@@ -15,7 +22,6 @@ const ContactForm = () => {
 
   // Form submission handler
   const onSubmit = (data) => {
-    console.log("Form data submitted:", data);
     setSuccessMessage("Thank you! Your message has been successfully sent.");
     // Reset the form fields
     reset();
@@ -24,15 +30,18 @@ const ContactForm = () => {
   };
 
   // Styles for input fields and labels
-  let inputFieldStyle = `focus:border-primary focus:bg-neutral focus:ring-2 focus:ring-indigo-200 text-base outline-none text-secondary py-1 px-3 leading-8 transition-colors duration-200 ease-in-out`;
-  let inputFieldLableStyle = `leading-7 text-sm text-secondary`;
+  const inputFieldStyle = `focus:border-primary focus:bg-neutral focus:ring-2 focus:ring-indigo-200 text-base outline-none text-secondary py-1 px-3 leading-8 transition-colors duration-200 ease-in-out`;
+  const inputFieldLableStyle = `leading-7 text-sm text-secondary`;
 
   return (
     <section className="text-secondary body-font mx-auto relative max-w-screen-xl">
       <div className="px-4 md:px-10 pt-12 lg:pt-24 pb-16 lg:pb-24 bg-neutral mx-4">
-        <div className="flex md:flex-row flex-col justify-between gap-20 md:gap-10 lg:gap-20">
+        <div className="flex  md:flex-row flex-col justify-between gap-20 md:gap-10 lg:gap-20">
           {/* Contact Form Section */}
-          <div className="lg:w-2/2 md:w-2/3 w-full">
+          <div
+            className="lg:w-2/2 md:w-2/3 w-full overflow-hidden"
+            data-aos="fade-up"
+          >
             <div className="flex flex-col w-full md:mb-16 mb-12 border border-x-0 border-b-1 border-t-0 pb-12 md:pb-16">
               <h1 className="font-bold text-3xl md:text-5xl title-font mb-2 md:mb-4 text-secondary">
                 Get in <span className="text-primary">touch</span>
@@ -53,6 +62,7 @@ const ContactForm = () => {
             <form
               onSubmit={handleSubmit(onSubmit)}
               className="flex flex-wrap -m-2 figtree_font"
+              data-aos="fade-up"
             >
               <div className="p-2 w-full md:w-1/2">
                 <div className="relative">
@@ -170,10 +180,11 @@ const ContactForm = () => {
             </form>
           </div>
           {/* Image Section */}
-          <div>
-            <img
-              className="w-full"
-              src="https://assets-global.website-files.com/654db8e1ea37faf3593d0817/6555c8d1ff2373b364c32e99_Rectangle%203419.png"
+          <div className="relative  mx-auto" data-aos="zoom-in">
+            <LazyLoadImage
+              effect="blur"
+              className="w-full "
+              src={contact_form_plumber_image}
               alt="Contact Form Background"
             />
           </div>

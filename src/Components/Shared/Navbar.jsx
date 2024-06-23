@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { IoCall } from "react-icons/io5";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -16,23 +17,25 @@ const Navbar = () => {
     }
     localStorage.setItem("theme", isDarkMode ? "dark" : "light");
   }, [isDarkMode]);
-
-  const handleToggle = () => {
-    setIsDarkMode(!isDarkMode);
-  };
+  const navItemStyle = `px-4 py-2 mt-2 text-base font-semibold rounded-lg md:mt-0 md:ml-2 hover:underline underline-offset-8 focus:outline-none focus:shadow-outline`;
+  // for dark mode
+  // const handleToggle = () => {
+  //   setIsDarkMode(!isDarkMode);
+  // };
 
   return (
-    <div>
-      <div className="relative z-50 hidden lg:block">
-        <div className="w-full text-neutral bg-primary py-2 shadow">
-          <div className="flex flex-col max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row md:px-6 lg:px-8">
-            <div className="flex flex-row items-center justify-between py-4">
+    <div className="overflow-hidden lg:-mb-[70px] ">
+      <div className="relative z-50 hidden lg:block ">
+        <div className="w-full text-neutral bg-transparent py-2 shadow ">
+          <div className="flex flex-col max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row md:px-6 lg:px-8 ">
+            <div className="flex flex-row items-center justify-between py-4 ">
               {/* logo  */}
               <NavLink
                 to="/"
                 className="text-lg font-semibold tracking-widest uppercase rounded-lg focus:outline-none focus:shadow-outline"
               >
-                <img
+                <LazyLoadImage
+                  effect="blur"
                   className="lg:h-auto md:h-10"
                   src="https://assets-global.website-files.com/654db8e1ea37faf3593d0817/6555a221f45bcbd11acc33ec_logo.png"
                   alt="logo"
@@ -41,54 +44,34 @@ const Navbar = () => {
             </div>
             {/* Navigation Links */}
             <nav className="flex flex-grow lg:flex lg:justify-end lg:flex-row">
-              <NavLink
-                className="px-4 py-2 mt-2 text-base font-semibold rounded-lg md:mt-0 md:ml-2 hover:underline underline-offset-8 focus:outline-none focus:shadow-outline"
-                to="/"
-              >
+              <NavLink className={navItemStyle} to="/">
                 Home
               </NavLink>
-              <NavLink
-                className="px-4 py-2 mt-2 text-base font-semibold rounded-lg md:mt-0 md:ml-2 hover:underline underline-offset-8 focus:outline-none focus:shadow-outline"
-                to="/about"
-              >
+              <NavLink className={navItemStyle} to="/about">
                 About
               </NavLink>
-              <NavLink
-                className="px-4 py-2 mt-2 text-base font-semibold rounded-lg md:mt-0 md:ml-2 hover:underline underline-offset-8 focus:outline-none focus:shadow-outline"
-                to="/services"
-              >
+              <NavLink className={navItemStyle} to="/services">
                 Services
               </NavLink>
-              <NavLink
-                className="px-4 py-2 mt-2 text-base font-semibold rounded-lg md:mt-0 md:ml-2 hover:underline underline-offset-8 focus:outline-none focus:shadow-outline"
-                to="/blogs"
-              >
+              <NavLink className={navItemStyle} to="/blogs">
                 Blogs
               </NavLink>
-              <NavLink
-                className="px-4 py-2 mt-2 text-base font-semibold rounded-lg md:mt-0 md:ml-2 hover:underline underline-offset-8 focus:outline-none focus:shadow-outline"
-                to="/contact"
-              >
+              <NavLink className={navItemStyle} to="/contact">
                 Contact
               </NavLink>
-              <NavLink
-                className="px-4 py-2 mt-2 text-base font-semibold rounded-lg md:mt-0 md:ml-2 hover:underline underline-offset-8 focus:outline-none focus:shadow-outline"
-                to="/pricing"
-              >
+              <NavLink className={navItemStyle} to="/pricing">
                 Pricing
               </NavLink>
-              <NavLink
-                className="px-4 py-2 mt-2 text-base font-semibold rounded-lg md:mt-0 md:ml-2 hover:underline underline-offset-8 focus:outline-none focus:shadow-outline"
-                to="/team"
-              >
+              <NavLink className={navItemStyle} to="/team">
                 Team
               </NavLink>
-              <Link
-                to=""
-                className="px-4 py-2 mt-2 text-base font-semibold rounded-lg md:mt-0 md:ml-2 hover:underline underline-offset-8 focus:outline-none focus:shadow-outline flex items-center gap-2"
+              <a
+                href="tel:(303)555-0107"
+                className="px-4  py-2 mt-2 text-base phoneNumber font-semibold rounded-lg md:mt-0 md:ml-2 hover:underline underline-offset-8 focus:outline-none focus:shadow-outline flex items-center gap-2"
               >
-                <IoCall /> 123-456-789
-              </Link>
+                <IoCall /> (303)555-0107
+              </a>
+
               <Link
                 className="group hidden border-white relative lg:flex items-center justify-center rounded overflow-hidden bg-primary mr-4 px-5 focus:outline-none focus:ring"
                 to="/contact"

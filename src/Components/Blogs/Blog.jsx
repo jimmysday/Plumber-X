@@ -1,17 +1,14 @@
-import React from "react";
 import { Link } from "react-router-dom";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const Blog = ({ data }) => {
-  // Destructuring props
-  const { title, id, day, month } = data || {};
+  const { title, day, month, image } = data || {};
 
   return (
-    <article className="relative overflow-hidden shadow transition hover:shadow-lg">
-      {/* Background image covering the entire article */}
-      <img
-        alt=""
-        src="https://assets-global.website-files.com/6555a58bd247940a6073a360/664b12d631cbc6b02fe6de59_A%20man%20is%20working-p-500.jpeg"
-        className="absolute inset-0 w-full h-full object-cover"
+    <article className="relative overflow-hidden shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 ">
+      <LazyLoadImage
+        alt={title}
+        src={image}
+        className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
       />
       <div
         className="relative bg-gradient-to-t from-primary to-transparent pt-32 sm:pt-48"
@@ -21,15 +18,15 @@ const Blog = ({ data }) => {
         }}
       >
         <div className="p-4 sm:p-6">
-          {/* Date section */}
           <div className="block text-xs text-neutral/90">
             <span className="text-5xl font-bold">{day}</span>
             <span className="figtree_font font-semibold block text-base tracking-[8px] uppercase">
               {month}
             </span>
           </div>
-          <Link to={`/blog/details/${id}`}>
-            {/* Blog title */}
+          <Link
+            to={`/blog/details/${title.replace(/\s+/g, "-").toLowerCase()}`}
+          >
             <h3 className="mt-6 figtree_font text-xl text-neutral">{title}</h3>
           </Link>
         </div>

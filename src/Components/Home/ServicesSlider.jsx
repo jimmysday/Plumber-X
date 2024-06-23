@@ -1,102 +1,18 @@
+import { useEffect } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import servicesData from "../../../public/Services.json";
 import { Link } from "react-router-dom";
 
 const ServicesSlider = () => {
-  // Array of slides
-  const slides = [
-    {
-      imageUrl:
-        "https://assets-global.website-files.com/6555a58bd247940a6073a360/664aef03a622385b5ef8c9b6_Industrial_Maintenance_Activity-p-500.png",
-      title: "Floor Heating",
-      link: "/team",
-      features: [
-        {
-          imageUrl:
-            "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b10f7f9c574ef5221bc3e_Water_Purity_Image.png",
-          text: "Luxurious Comfort",
-        },
-        {
-          imageUrl:
-            "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0c8735ea8799c90f9de2_Regular_Maintenance.png",
-          text: "Regulatory Compliance",
-        },
-      ],
-    },
-    {
-      imageUrl:
-        "https://assets-global.website-files.com/6555a58bd247940a6073a360/664aef03a622385b5ef8c9b6_Industrial_Maintenance_Activity-p-500.png",
-      title: "Floor Heating",
-      link: "/team",
-      features: [
-        {
-          imageUrl:
-            "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b10f7f9c574ef5221bc3e_Water_Purity_Image.png",
-          text: "Luxurious Comfort",
-        },
-        {
-          imageUrl:
-            "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0c8735ea8799c90f9de2_Regular_Maintenance.png",
-          text: "Regulatory Compliance",
-        },
-      ],
-    },
-    {
-      imageUrl:
-        "https://assets-global.website-files.com/6555a58bd247940a6073a360/664aef03a622385b5ef8c9b6_Industrial_Maintenance_Activity-p-500.png",
-      title: "Floor Heating",
-      link: "/team",
-      features: [
-        {
-          imageUrl:
-            "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b10f7f9c574ef5221bc3e_Water_Purity_Image.png",
-          text: "Luxurious Comfort",
-        },
-        {
-          imageUrl:
-            "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0c8735ea8799c90f9de2_Regular_Maintenance.png",
-          text: "Regulatory Compliance",
-        },
-      ],
-    },
-    {
-      imageUrl:
-        "https://assets-global.website-files.com/6555a58bd247940a6073a360/664aef03a622385b5ef8c9b6_Industrial_Maintenance_Activity-p-500.png",
-      title: "Floor Heating",
-      link: "/team",
-      features: [
-        {
-          imageUrl:
-            "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b10f7f9c574ef5221bc3e_Water_Purity_Image.png",
-          text: "Luxurious Comfort",
-        },
-        {
-          imageUrl:
-            "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0c8735ea8799c90f9de2_Regular_Maintenance.png",
-          text: "Regulatory Compliance",
-        },
-      ],
-    },
-    {
-      imageUrl:
-        "https://assets-global.website-files.com/6555a58bd247940a6073a360/664aef03a622385b5ef8c9b6_Industrial_Maintenance_Activity-p-500.png",
-      title: "Floor Heating",
-      link: "/team",
-      features: [
-        {
-          imageUrl:
-            "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b10f7f9c574ef5221bc3e_Water_Purity_Image.png",
-          text: "Luxurious Comfort",
-        },
-        {
-          imageUrl:
-            "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0c8735ea8799c90f9de2_Regular_Maintenance.png",
-          text: "Regulatory Compliance",
-        },
-      ],
-    },
-    // Add more slides as needed
-  ];
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: true,
+    });
+  }, []);
 
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
@@ -117,11 +33,11 @@ const ServicesSlider = () => {
   });
 
   return (
-    <div>
-      <section className="py-24 px-4 overflow-hidden">
+    <div className="overflow-hidden">
+      <section className="py-20 sm:py-24 px-4 overflow-hidden">
         <div className="mx-auto max-w-screen-xl">
           <div className="grid grid-cols-1 gap-y-6 lg:gap-y-0 lg:grid-cols-2 items-end">
-            <div>
+            <div data-aos="fade-right">
               <p className="text-primary text-base font-bold mb-3 md:mb-5">
                 Our Services
               </p>
@@ -129,15 +45,14 @@ const ServicesSlider = () => {
                 From Leaking Faucet to Gushing Pipes
               </h2>
             </div>
-            <p>
+            <p data-aos="fade-left">
               While certain plumbing issues, such as a minor toilet clog, can be
               quickly addressed with do-it-yourself methods, most plumbing
               problems require the assistance of a professional.
             </p>
           </div>
           <div className="max-w-7xl items-end justify-end mt-10 sm:flex sm:pe-6 lg:pe-8">
-            <div className="mt-8 flex gap-4 lg:mt-0">
-              {/* Button to navigate to previous slide */}
+            <div className="mt-8 flex gap-4 lg:mt-0" data-aos="fade-up">
               <button
                 aria-label="Previous slide"
                 onClick={() => slider.current?.prev()}
@@ -158,7 +73,6 @@ const ServicesSlider = () => {
                   />
                 </svg>
               </button>
-              {/* Button to navigate to next slide */}
               <button
                 aria-label="Next slide"
                 onClick={() => slider.current?.next()}
@@ -181,38 +95,46 @@ const ServicesSlider = () => {
               </button>
             </div>
           </div>
-          <div className="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
-            {/* Keen Slider container */}
-            <div ref={sliderRef} className="keen-slider">
-              {/* Map over slides array to render each slide */}
-              {slides.map((slide, index) => (
-                <div key={index} className="keen-slider__slide">
+          <div className="-mx-6 mt-8 lg:col-span-2 lg:mx- 0" data-aos="fade-up">
+            <div ref={sliderRef} className="keen-slider ">
+              {servicesData.map((slide, index) => (
+                <div key={index} className="keen-slider__slide ">
                   <blockquote className="flex h-full flex-col justify-between shadow-sm">
-                    <div>
-                      <img className="w-full" src={slide.imageUrl} alt="" />
-                      <div className="bg-neutral mx-3 sm:mx-5 -mt-20 z-10 relative p-6 sm:p-10 shadow rounded">
+                    <div className="pb-2">
+                      <img
+                        className="w-full h-80 object-cover"
+                        src={slide.mainImage}
+                        alt={slide.name}
+                      />
+                      <div className="bg-neutral  mx-3 sm:mx-5 -mt-20 z-10 relative p-6 sm:p-10 shadow rounded">
                         <div className="flex justify-between">
                           <p className="text-secondary text-xl font-semibold">
-                            {slide.title}
+                            {slide.name}
                           </p>
                           <Link
-                            to={slide.link}
+                            to="/services"
                             className="hover:text-primary hover:underline"
                           >
                             View All
                           </Link>
                         </div>
-                        {/* Map over features array within each slide */}
-                        {slide.features.map((feature, fIndex) => (
-                          <div key={fIndex} className="flex gap-x-5 mt-8">
-                            <img
-                              className="w-[30px]"
-                              src={feature.imageUrl}
-                              alt=""
-                            />
-                            <p>{feature.text}</p>
-                          </div>
-                        ))}
+
+                        <div className="flex gap-x-5 mt-8">
+                          <img
+                            className="w-[30px]"
+                            src={slide.serviceIcon1}
+                            alt={slide.features[0]}
+                          />
+                          <p>{slide.features[0]}</p>
+                        </div>
+                        <div className="flex gap-x-5 mt-8">
+                          <img
+                            className="w-[30px]"
+                            src={slide.serviceIcon2}
+                            alt={slide.features[1]}
+                          />
+                          <p>{slide.features[1]}</p>
+                        </div>
                       </div>
                     </div>
                   </blockquote>

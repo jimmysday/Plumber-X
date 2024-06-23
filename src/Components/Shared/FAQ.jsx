@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { FaChevronDown } from "react-icons/fa";
 
 // FAQ data array
@@ -30,15 +33,23 @@ const faqData = [
 ];
 
 export const FAQ = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      offset: 50,
+      duration: 800,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="">
-        {/* Container for FAQ content with responsive design and spacing */}
-        <div className="px-4 w-full flex md:flex-row flex-col gap-20 md:gap-0 justify-start max-w-screen-xl py-24 mx-auto">
+        <div className="px-4 w-full flex md:flex-row flex-col gap-20 md:gap-0 justify-start max-w-screen-xl py-16 sm:py-24 mx-auto">
           {/* FAQ title section */}
           <div>
             <p className="text-primary font-bold mb-4">FAQ</p>
-            <h1 className="text-3xl md:text-5xl font-semibold figtree_font">
+            <h1 className="text-3xl w-[70%] sm:w-auto md:text-5xl font-semibold figtree_font">
               Frequently asked questions
             </h1>
           </div>
@@ -51,8 +62,9 @@ export const FAQ = () => {
                 key={index}
                 className="group [&_summary::-webkit-details-marker]:hidden bg-neutral rounded-sm"
                 open={index === 0} // Open the first FAQ item by default
+                data-aos="fade-up"
               >
-                <summary className="flex cursor-pointer w-full items-center justify-between gap-1.5 rounded-lg p-4 text-secondary">
+                <summary className="flex cursor-pointer w-full items-center justify-between gap-1.5 rounded-lg p-4 text-secondary transition-transform duration-300">
                   <h2 className="md:text-xl text-base md:font-bold font-semibold w-full">
                     {faq.question}
                   </h2>

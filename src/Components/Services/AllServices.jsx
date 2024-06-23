@@ -1,21 +1,28 @@
-import BlogsData from "../../../public/Blogs.json";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import servicesData from "../../../public/Services.json";
 import Service from "./Service";
 
 const AllServices = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
-    <div>
-      {/* Breadcrumb  */}
-      <div className="bg-primary lg:py-8 sm:h-[400px] h-[300px] -mb-20">
-        <div className="  text-center md:text-left relative mx-auto px-4 sm:px-6 lg:px-8  max-w-screen-xl">
-          <h2 className="text-5xl md:text-7xl  font-bold text-neutral  inline-block px-4 py-2 rounded-t-md mt-20 figtree_font">
-            Services
-          </h2>
-        </div>
-      </div>
-      {/* Services  */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 max-w-screen-xl mx-auto gap-y-20 gap-x-10 px-4">
-        {BlogsData.map((data) => (
-          <Service key={data.title} data={data} />
+    <div className="overflow-hidden  pb-16">
+      {/* Services */}
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 max-w-screen-xl mx-auto gap-y-20 gap-x-10 px-4"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
+        {servicesData.map((service) => (
+          <Service key={service.id} data={service} />
         ))}
       </div>
     </div>

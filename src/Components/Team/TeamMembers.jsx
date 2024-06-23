@@ -1,36 +1,43 @@
-import Member1 from "../../assets/Images/member-1.png";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import team_member_BG from "../../assets/Images/Team_Member-BG.png";
-
-// TeamMembers component definition
+import teamMembers from "../../../public/TeamMembers.json";
 const TeamMembers = () => {
-  // Array of team member data
-  const teamMembers = [
-    { name: "Guy <br> Hawkins", title: "Plumber" },
-    { name: "Esther <br> Howard", title: "Plumber" },
-    { name: "Darrell <br> Steward", title: "Plumber" },
-    { name: "Guy <br> Hawkins", title: "Plumber", team: "Plum" },
-    { name: "Esther <br> Howard", title: "Plumber", team: "229 x 86" },
-    { name: "Darrell <br> Steward", title: "Plumber", team: "Plumber" },
-  ];
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+    });
+    // Refresh AOS when the component updates
+    AOS.refresh();
+  }, []);
 
   return (
     <div className="mx-auto max-w-screen-xl">
-      <div className="grid bg-neutral px-4 lg:px-10 md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 pt-24 pb-10 md:mx-0 lg:mx-4">
+      <div className="grid bg-neutral overflow-hidden px-4 lg:px-10 md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 pt-24 pb-10 md:mx-0 lg:mx-4">
         {/* Mapping through teamMembers array*/}
         {teamMembers.map((member, index) => (
           <div key={index}>
             <div
-              style={{ backgroundImage: `url(${team_member_BG})` }}
-              className="relative overflow-hidden bg-cover rounded-sm shadow transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-lg h-[475px]"
+              data-aos="fade-up"
+              data-aos-delay={`${index * 100}`}
+              className="relative overflow-hidden bg-cover rounded-sm shadow transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-xl h-[475px] group"
             >
+              {/* Background blur effect */}
+              <div
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-in-out group-hover:blur-sm "
+                style={{ backgroundImage: `url(${team_member_BG})` }}
+              ></div>
+
               <img
                 alt=""
-                src={Member1}
-                className="absolute inset-0 mt-20 mx-auto bg-center transition-all duration-500 transform hover:scale-110"
+                src={member.image}
+                className="relative z-10 mt-20 mx-auto transition-transform duration-500 transform group-hover:scale-110 group-hover:rotate-3 "
               />
 
-              <div className="h-[475px] relative bg-gradient-to-t from-primary/60 to-transparent transition-opacity duration-500 ease-in-out hover:from-primary/80">
-                <div className="p-4 sm:p-6 absolute bottom-0">
+              <div className="absolute inset-0 z-20">
+                <div className="absolute bottom-0 w-full bg-gradient-to-t from-primary/100 to-transparent p-4 sm:p-6">
                   {/* Team member's name with HTML rendering for line breaks */}
                   <h1
                     dangerouslySetInnerHTML={{ __html: member.name }}

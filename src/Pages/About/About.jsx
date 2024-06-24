@@ -15,9 +15,9 @@ const About = () => {
         <title>About</title>
       </Helmet>
       {/* Breadcrumb  */}
-      <div className="bg-primary py-8 h-[400px] lg:mb-[300px] mb-[150px] md:mb-[310px] ">
+      <div className="bg-primary py-8 h-[400px] lg:h-[480px] lg:mb-[300px] mb-[150px] md:mb-[310px] ">
         <div className="  text-center md:text-left relative mx-auto px-4 sm:px-6 lg:px-8  max-w-screen-xl">
-          <h2 className="text-5xl md:text-7xl font-bold text-neutral inline-block px-4 py-2 rounded-t-md mt-20 figtree_font">
+          <h2 className="text-5xl md:text-7xl  font-bold text-neutral  inline-block px-4 py-2 rounded-t-md mt-20 lg:mt-36 figtree_font">
             About Us
           </h2>
           <div className="flex flex-col max-w-screen-lg mx-auto bg-neutral shadow-md rounded-md overflow-hidden mt-24 md:mt-20">

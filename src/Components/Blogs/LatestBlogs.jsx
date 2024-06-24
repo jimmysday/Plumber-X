@@ -33,7 +33,7 @@ const LatestBlogs = () => {
             >
               View all blog
               {/* Arrow icon */}
-              <span className="inline-block transform transition-transform duration-300 group-hover:translate-x-2">
+              <span className="inline-block transform transition-transform duration-300 group-hover:translate-x-2 mt-2">
                 <LazyLoadImage
                   effect="blur"
                   src={latest_blogs_right_arrow_icon}

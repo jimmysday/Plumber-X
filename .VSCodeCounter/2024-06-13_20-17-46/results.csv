@@ -1,0 +1,59 @@
+"filename", "language", "JavaScript", "Markdown", "JSON", "HTML", "CSS", "XML", "JavaScript JSX", "comment", "blank", "total"
+"d:\Projects\plumber\.eslintrc.cjs", "JavaScript", 21, 0, 0, 0, 0, 0, 0, 0, 1, 22
+"d:\Projects\plumber\README.md", "Markdown", 0, 5, 0, 0, 0, 0, 0, 0, 4, 9
+"d:\Projects\plumber\index.html", "HTML", 0, 0, 0, 36, 0, 0, 0, 1, 1, 38
+"d:\Projects\plumber\package-lock.json", "JSON", 0, 0, 5624, 0, 0, 0, 0, 0, 1, 5625
+"d:\Projects\plumber\package.json", "JSON", 0, 0, 42, 0, 0, 0, 0, 0, 1, 43
+"d:\Projects\plumber\postcss.config.js", "JavaScript", 6, 0, 0, 0, 0, 0, 0, 0, 1, 7
+"d:\Projects\plumber\public\Blogs.json", "JSON", 0, 0, 44, 0, 0, 0, 0, 0, 1, 45
+"d:\Projects\plumber\public\vite.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 1
+"d:\Projects\plumber\src\App.css", "CSS", 0, 0, 0, 0, 62, 0, 0, 2, 9, 73
+"d:\Projects\plumber\src\Components\About\BasicInfo.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 50, 0, 3, 53
+"d:\Projects\plumber\src\Components\About\FanFacts.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 53, 0, 3, 56
+"d:\Projects\plumber\src\Components\About\HappyClients.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 30, 0, 3, 33
+"d:\Projects\plumber\src\Components\About\OurTeam.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 69, 0, 6, 75
+"d:\Projects\plumber\src\Components\Blogs\Blog.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 33, 0, 2, 35
+"d:\Projects\plumber\src\Components\Blogs\BlogDetail.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 125, 1, 10, 136
+"d:\Projects\plumber\src\Components\Blogs\Blogs.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 85, 1, 2, 88
+"d:\Projects\plumber\src\Components\Blogs\BlogsForHomePage\Blog.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 27, 0, 3, 30
+"d:\Projects\plumber\src\Components\Blogs\BlogsForHomePage\Blogs.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 30, 0, 3, 33
+"d:\Projects\plumber\src\Components\Blogs\LatestBlogs.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 38, 0, 3, 41
+"d:\Projects\plumber\src\Components\ContactForm.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 157, 0, 3, 160
+"d:\Projects\plumber\src\Components\Demo.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 23, 0, 1, 24
+"d:\Projects\plumber\src\Components\Home\FunFacts.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 67, 0, 3, 70
+"d:\Projects\plumber\src\Components\Home\HeroSection.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 56, 0, 3, 59
+"d:\Projects\plumber\src\Components\Home\OurApproach.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 69, 0, 4, 73
+"d:\Projects\plumber\src\Components\Home\ServicesSlider.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 284, 1, 5, 290
+"d:\Projects\plumber\src\Components\Home\Testimonials.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 118, 1, 4, 123
+"d:\Projects\plumber\src\Components\Pricing\HappyClients.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 54, 0, 3, 57
+"d:\Projects\plumber\src\Components\Pricing\PricingTabs.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 297, 3, 3, 303
+"d:\Projects\plumber\src\Components\Services\AllServices.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 22, 0, 3, 25
+"d:\Projects\plumber\src\Components\Services\Service.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 59, 0, 4, 63
+"d:\Projects\plumber\src\Components\Services\ServiceDetail.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 217, 0, 11, 228
+"d:\Projects\plumber\src\Components\Shared\Breadcrumb.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 19, 0, 2, 21
+"d:\Projects\plumber\src\Components\Shared\FAQ.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 85, 0, 14, 99
+"d:\Projects\plumber\src\Components\Shared\Footer.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 84, 0, 14, 98
+"d:\Projects\plumber\src\Components\Shared\JsonData.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 153, 1, 12, 166
+"d:\Projects\plumber\src\Components\Shared\Location.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 112, 0, 3, 115
+"d:\Projects\plumber\src\Components\Shared\Navbar.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 151, 114, 9, 274
+"d:\Projects\plumber\src\Components\Shared\WhyChooseUs.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 35, 0, 3, 38
+"d:\Projects\plumber\src\Components\Team\Quote.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 32, 0, 1, 33
+"d:\Projects\plumber\src\Components\Team\TeamMembers.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 44, 0, 3, 47
+"d:\Projects\plumber\src\Layout\Root.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 15, 0, 4, 19
+"d:\Projects\plumber\src\Pages\About\About.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 36, 0, 3, 39
+"d:\Projects\plumber\src\Pages\BlogDetails\BlogDetails.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 14, 0, 1, 15
+"d:\Projects\plumber\src\Pages\Blog\Blog.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 14, 0, 3, 17
+"d:\Projects\plumber\src\Pages\Contact\Contact.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 22, 0, 1, 23
+"d:\Projects\plumber\src\Pages\Home\Home.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 23, 0, 1, 24
+"d:\Projects\plumber\src\Pages\Pricing\Pricing.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 22, 0, 2, 24
+"d:\Projects\plumber\src\Pages\Services\ServiceDetails.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 14, 0, 3, 17
+"d:\Projects\plumber\src\Pages\Services\Services.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 14, 0, 1, 15
+"d:\Projects\plumber\src\Pages\Team\Team.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 23, 0, 2, 25
+"d:\Projects\plumber\src\Router\Router.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 62, 0, 4, 66
+"d:\Projects\plumber\src\Router\ScrollToTop.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 10, 0, 5, 15
+"d:\Projects\plumber\src\assets\react.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 1
+"d:\Projects\plumber\src\index.css", "CSS", 0, 0, 0, 0, 3, 0, 0, 0, 0, 3
+"d:\Projects\plumber\src\main.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 11, 0, 2, 13
+"d:\Projects\plumber\tailwind.config.js", "JavaScript", 36, 0, 0, 0, 0, 0, 0, 1, 2, 39
+"d:\Projects\plumber\vite.config.js", "JavaScript", 5, 0, 0, 0, 0, 0, 0, 1, 2, 8
+"Total", "-", 68, 5, 5710, 36, 65, 2, 2958, 127, 201, 9172

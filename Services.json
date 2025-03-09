@@ -1,0 +1,151 @@
+[
+  {
+    "id": 1,
+    "name": "Floor Heating",
+    "slug": "floor-heating",
+    "mainImage": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664ad151ad188b5f03df190d_Living_Room_Cleaning_Illustration-p-500.jpeg",
+    "process": "Our Floor Heating Process includes consultation, site preparation, material selection, installation, quality checks, and client satisfaction. We ensure a warm and comfortable living space.",
+    "reasons": "Selecting us for Floor Heating guarantees expert installation, top-quality materials, and meticulous attention to detail. Your comfort and satisfaction are our priorities.",
+    "serviceInclude": [
+      "Material Selection: Choose from top-quality materials tailored to your needs.",
+      "Sturdy Construction: Our team ensures durable and effective heating systems.",
+      "Client Satisfaction: We prioritize your comfort and go the extra mile.",
+      "Final Inspection: We ensure everything is perfect before we leave."
+    ],
+    "shortDescription": "Experience luxurious, energy-efficient floor heating.",
+    "features": [
+      "Luxurious Comfort",
+      "Energy-Efficient Heating",
+      "Customizable Zones",
+      "Expert Installation"
+    ],
+    "serviceIcon1": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664af17857c8092dd677e520_Active_Lever_Switch_Icon.png",
+    "serviceIcon2": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664af1d4becdff2988a19d91_Heated_Home_Icon.png",
+    "serviceIcon3": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664af22dd0fb214404c963e3_Crossed%20Hammer%20and%20Wrench%20Icon.png",
+    "serviceIcon4": "https://assets-global.website-files.com/6555a58bd247940a6073a360/655b392855c5599d1da9b7c8_6555f0aa28cf849cc7aa0708_655369a5bd9d5543c883dbb3_Expert%2520Installation.png"
+  },
+  {
+    "id": 2,
+    "name": "Inverter Installation",
+    "slug": "inverter-installation",
+    "mainImage": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664aec10a4255963afdd2d08_Plumbing_Repair_Utility_Room_Illustration-p-500.png",
+    "process": "Our Inverter Installation Process includes consultation, site assessment, equipment selection, installation, system testing, and client satisfaction.",
+    "reasons": "Choose us for reliable inverter installation, expert technicians, and top-quality equipment ensuring uninterrupted power supply.",
+    "serviceInclude": [
+      "Consultation: Personalized service tailored to your power needs.",
+      "Professional Installation: Ensuring safe and efficient inverter setup.",
+      "System Testing: Thorough testing for optimal performance.",
+      "Client Support: Ongoing support and maintenance."
+    ],
+    "shortDescription": "Reliable inverter installation for uninterrupted power supply.",
+    "features": [
+      "Uninterrupted Power",
+      "Expert Installation",
+      "High-Quality Equipment",
+      "Ongoing Support"
+    ],
+    "serviceIcon1": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0c0ad8bcc371c8308086_Resistor_Circuit_Diagram_Symbol.png",
+    "serviceIcon2": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0c382ae29ad5b8697b3a_Variable_Resistor_Potentiometer_Circuit_Diagram_Symbol.png",
+    "serviceIcon3": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0c67e4f48db0f43248dc_User_Training_Session.png",
+    "serviceIcon4": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0c8735ea8799c90f9de2_Regular_Maintenance.png"
+  },
+  {
+    "id": 3,
+    "name": "Emergency Plumbing",
+    "slug": "emergency-plumbing",
+    "mainImage": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664aeceed4311ecb5d121e93_kitchen.png",
+    "process": "Our Emergency Plumbing Process includes rapid response, problem assessment, immediate repair, and follow-up services.",
+    "reasons": "Choose us for swift, reliable emergency plumbing services available 24/7.",
+    "serviceInclude": [
+      "Rapid Response: Immediate attention to your plumbing emergencies.",
+      "Expert Repair: Skilled plumbers ensure quick and effective solutions.",
+      "Follow-Up: Ensuring lasting solutions and customer satisfaction.",
+      "24/7 Availability: We're always ready to help."
+    ],
+    "shortDescription": "Swift and reliable emergency plumbing services available 24/7.",
+    "features": [
+      "Rapid Response",
+      "Expert Repair",
+      "24/7 Availability",
+      "Customer Satisfaction"
+    ],
+    "serviceIcon1": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0d12203cdd8ecbb6c4eb_6555f0a9dc16fcac81a9ccf5_65536a9c5e12a5b5267d921f_24-7.png",
+    "serviceIcon2": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0d39855c08d77ff5a532_Comprehensive_Plumbing_Solution.png",
+    "serviceIcon3": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0d5f4d94a6991752f191_Comprehensive_Emergency_Repairs.png",
+    "serviceIcon4": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0da219dfd1732590b987_Emergency_Pricing.png"
+  },
+  {
+    "id": 4,
+    "name": "Residential Plumbing",
+    "slug": "residential-plumbing",
+    "mainImage": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664aee9e2f993714cdc2ff09_a%20man%20working%20beside%20a%20toilet.png",
+    "process": "Our Residential Plumbing Process includes initial consultation, problem diagnosis, repair or installation, quality checks, and client satisfaction.",
+    "reasons": "Trust us for comprehensive residential plumbing services with a focus on quality and customer satisfaction.",
+    "serviceInclude": [
+      "Diagnosis: Accurate identification of plumbing issues.",
+      "Repair/Installation: Efficient and reliable service.",
+      "Quality Checks: Ensuring top-notch service.",
+      "Client Satisfaction: Your satisfaction is our priority."
+    ],
+    "shortDescription": "Comprehensive plumbing solutions for your home.",
+    "features": [
+      "Expert Diagnosis",
+      "Reliable Service",
+      "Quality Assurance",
+      "Customer Satisfaction"
+    ],
+    "serviceIcon1": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0fcf26e49ef57db90c0f_Emergency_Response_Image.png",
+    "serviceIcon2": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0ff285f86abc88aa7cca_Certified_Expert__Image.png",
+    "serviceIcon3": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0d39855c08d77ff5a532_Comprehensive_Plumbing_Solution.png",
+    "serviceIcon4": "https://assets-global.website-files.com/6555a58bd247940a6073a360/655b392855c5599d1da9b7c8_6555f0aa28cf849cc7aa0708_655369a5bd9d5543c883dbb3_Expert%2520Installation.png"
+  },
+  {
+    "id": 5,
+    "name": "Backflow Device Testing",
+    "slug": "backflow-device-testing",
+    "mainImage": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664aef03a622385b5ef8c9b6_Industrial_Maintenance_Activity-p-500.png",
+    "process": "Our Backflow Device Testing Process includes initial inspection, device testing, reporting, and compliance certification.",
+    "reasons": "Choose us for reliable backflow device testing to ensure your water system's safety and compliance with regulations.",
+    "serviceInclude": [
+      "Inspection: Thorough examination of your backflow device.",
+      "Testing: Accurate testing for proper functionality.",
+      "Reporting: Detailed report of findings and recommendations.",
+      "Certification: Ensuring compliance with safety regulations."
+    ],
+    "shortDescription": "Ensure water safety with our expert backflow device testing services.",
+    "features": [
+      "Thorough Inspection",
+      "Accurate Testing",
+      "Detailed Reporting",
+      "Compliance Certification"
+    ],
+    "serviceIcon1": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b10f7f9c574ef5221bc3e_Water_Purity_Image.png",
+    "serviceIcon2": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0c8735ea8799c90f9de2_Regular_Maintenance.png",
+    "serviceIcon3": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b116895a131c36f02c694_repairing%20a%20water%20heater.png",
+    "serviceIcon4": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0ff285f86abc88aa7cca_Certified_Expert__Image.png"
+  },
+  {
+    "id": 6,
+    "name": "Plumbing Service",
+    "slug": "plumbing-service",
+    "mainImage": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664aed58f2191fd5df229176_Plumbing_Repair_Utility_Room_Illustration-p-500.jpeg",
+    "process": "Initial Contact: Reach out and we respond promptly. Evaluation: Our experts assess your needs. Transparent Pricing: Clear, competitive quotes. Expert Service: Licensed and insured plumbers. Quality Work: High standards. Timely Completion: Punctual service. Satisfaction: Your happiness is our goal.",
+    "reasons": "Experience, transparency, quality assurance, and 24/7 emergency services set us apart. Your plumbing, our priority, your satisfaction, our guarantee.",
+    "serviceInclude": [
+      "Pipe Inspections and Repairs: Trust us for thorough pipe inspections and expert repairs, ensuring your plumbing operates flawlessly.",
+      "Fixture Installation: Our professionals skillfully install fixtures to enhance your home's functionality and aesthetics.",
+      "Sump Pump Installation and Maintenance: Count on us for reliable sump pump installation and ongoing maintenance, safeguarding your property from water damage."
+    ],
+    "shortDescription": "Comprehensive plumbing services to meet all your needs.",
+    "features": [
+      "Expert Plumbers",
+      "Transparent Pricing",
+      "24/7 Emergency Services",
+      "Customer Satisfaction"
+    ],
+    "serviceIcon1": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0e5419dfd17325914d0f_6555f0a9d19dbdf559370a25_653122d78e1b062c9ddfe430_Plumbering.png",
+    "serviceIcon2": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0eb4166c7ae88d7499a6_Watter_Service_Image.png",
+    "serviceIcon3": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0ed3e18764372966abed_Water_Heater_Service_Image.png",
+    "serviceIcon4": "https://assets-global.website-files.com/6555a58bd247940a6073a360/664b0eea28d02315cacd8eb4_Professional_Plumber_Service_Image.png"
+  }
+]

@@ -1,0 +1,98 @@
+Date : 2024-06-14 15:19:38
+Directory : d:\Projects\plumber
+Total : 46 files,  -496 codes, 69 comments, 18 blanks, all -409 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| JavaScript     |          1 |          1 |          0 |          0 |          1 |
+| CSS            |          1 |        -25 |          5 |          3 |        -17 |
+| JavaScript JSX |         44 |       -472 |         64 |         15 |       -393 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                   |         46 |       -496 |         69 |         18 |       -409 |
+| . (Files)                                                           |          1 |          1 |          0 |          0 |          1 |
+| src                                                                 |         45 |       -497 |         69 |         18 |       -410 |
+| src (Files)                                                         |          1 |        -25 |          5 |          3 |        -17 |
+| src\Components                                                      |         33 |       -472 |         51 |         16 |       -405 |
+| src\Components (Files)                                              |          3 |        -49 |          7 |          4 |        -38 |
+| src\Components\About                                                |          4 |        -12 |         12 |          0 |          0 |
+| src\Components\Blogs                                                |          6 |       -127 |         65 |          2 |        -60 |
+| src\Components\Blogs (Files)                                        |          4 |        -70 |         11 |          3 |        -56 |
+| src\Components\Blogs\BlogsForHomePage                               |          2 |        -57 |         54 |         -1 |         -4 |
+| src\Components\Contact                                              |          1 |        168 |         10 |          9 |        187 |
+| src\Components\Home                                                 |          4 |        -59 |         16 |          5 |        -38 |
+| src\Components\Pricing                                              |          2 |       -203 |          3 |          1 |       -199 |
+| src\Components\Services                                             |          3 |          2 |         22 |         12 |         36 |
+| src\Components\Shared                                               |          8 |       -196 |        -91 |        -22 |       -309 |
+| src\Components\Team                                                 |          2 |          4 |          7 |          5 |         16 |
+| src\Layout                                                          |          1 |          2 |          0 |         -1 |          1 |
+| src\Pages                                                           |          9 |         -3 |         13 |          1 |         11 |
+| src\Pages\About                                                     |          1 |         -1 |          2 |          0 |          1 |
+| src\Pages\Blog                                                      |          1 |         -1 |          1 |          0 |          0 |
+| src\Pages\BlogDetails                                               |          1 |          0 |          1 |          0 |          1 |
+| src\Pages\Contact                                                   |          1 |          0 |          2 |          0 |          2 |
+| src\Pages\Home                                                      |          1 |          0 |          1 |          0 |          1 |
+| src\Pages\Pricing                                                   |          1 |          0 |          2 |          0 |          2 |
+| src\Pages\Services                                                  |          2 |          0 |          2 |          0 |          2 |
+| src\Pages\Team                                                      |          1 |         -1 |          2 |          1 |          2 |
+| src\Router                                                          |          1 |          1 |          0 |         -1 |          0 |
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                            | language       | code       | comment    | blank      | total      |
++---------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| d:\Projects\plumber\src\App.css                                     | CSS            |        -25 |          5 |          3 |        -17 |
+| d:\Projects\plumber\src\Components\About\BasicInfo.jsx              | JavaScript JSX |         -1 |          2 |          0 |          1 |
+| d:\Projects\plumber\src\Components\About\FanFacts.jsx               | JavaScript JSX |         12 |          4 |          0 |         16 |
+| d:\Projects\plumber\src\Components\About\HappyClients.jsx           | JavaScript JSX |          5 |          2 |          1 |          8 |
+| d:\Projects\plumber\src\Components\About\OurTeam.jsx                | JavaScript JSX |        -28 |          4 |         -1 |        -25 |
+| d:\Projects\plumber\src\Components\Blogs\Blog.jsx                   | JavaScript JSX |          1 |          4 |          2 |          7 |
+| d:\Projects\plumber\src\Components\Blogs\BlogDetail.jsx             | JavaScript JSX |        -92 |          1 |         -5 |        -96 |
+| d:\Projects\plumber\src\Components\Blogs\Blogs.jsx                  | JavaScript JSX |         22 |          2 |          4 |         28 |
+| d:\Projects\plumber\src\Components\Blogs\BlogsForHomePage\Blog.jsx  | JavaScript JSX |        -27 |         27 |          0 |          0 |
+| d:\Projects\plumber\src\Components\Blogs\BlogsForHomePage\Blogs.jsx | JavaScript JSX |        -30 |         27 |         -1 |         -4 |
+| d:\Projects\plumber\src\Components\Blogs\LatestBlogs.jsx            | JavaScript JSX |         -1 |          4 |          2 |          5 |
+| d:\Projects\plumber\src\Components\ContactForm.jsx                  | JavaScript JSX |       -157 |          0 |         -3 |       -160 |
+| d:\Projects\plumber\src\Components\Contact\ContactForm.jsx          | JavaScript JSX |        168 |         10 |          9 |        187 |
+| d:\Projects\plumber\src\Components\Demo.jsx                         | JavaScript JSX |        -23 |          0 |         -1 |        -24 |
+| d:\Projects\plumber\src\Components\Home\FunFacts.jsx                | JavaScript JSX |          0 |          4 |          3 |          7 |
+| d:\Projects\plumber\src\Components\Home\HeroSection.jsx             | JavaScript JSX |          6 |          4 |          2 |         12 |
+| d:\Projects\plumber\src\Components\Home\OurApproach.jsx             | JavaScript JSX |          1 |          2 |          0 |          3 |
+| d:\Projects\plumber\src\Components\Home\ServicesSlider.jsx          | JavaScript JSX |        -66 |          6 |          0 |        -60 |
+| d:\Projects\plumber\src\Components\NavbarForPhone.jsx               | JavaScript JSX |        131 |          7 |          8 |        146 |
+| d:\Projects\plumber\src\Components\Pricing\HappyClients.jsx         | JavaScript JSX |        -23 |          2 |          0 |        -21 |
+| d:\Projects\plumber\src\Components\Pricing\PricingTabs.jsx          | JavaScript JSX |       -180 |          1 |          1 |       -178 |
+| d:\Projects\plumber\src\Components\Services\AllServices.jsx         | JavaScript JSX |         -1 |          2 |          0 |          1 |
+| d:\Projects\plumber\src\Components\Services\Service.jsx             | JavaScript JSX |         -1 |          6 |          4 |          9 |
+| d:\Projects\plumber\src\Components\Services\ServiceDetail.jsx       | JavaScript JSX |          4 |         14 |          8 |         26 |
+| d:\Projects\plumber\src\Components\Shared\Breadcrumb.jsx            | JavaScript JSX |        -19 |          0 |         -2 |        -21 |
+| d:\Projects\plumber\src\Components\Shared\FAQ.jsx                   | JavaScript JSX |        -22 |          5 |         -9 |        -26 |
+| d:\Projects\plumber\src\Components\Shared\Footer.jsx                | JavaScript JSX |         -1 |          5 |         -7 |         -3 |
+| d:\Projects\plumber\src\Components\Shared\JsonData.jsx              | JavaScript JSX |       -153 |         -1 |        -12 |       -166 |
+| d:\Projects\plumber\src\Components\Shared\Location.jsx              | JavaScript JSX |          0 |          9 |          6 |         15 |
+| d:\Projects\plumber\src\Components\Shared\Navbar.jsx                | JavaScript JSX |        -28 |       -114 |         -3 |       -145 |
+| d:\Projects\plumber\src\Components\Shared\NotFound.jsx              | JavaScript JSX |         27 |          1 |          4 |         32 |
+| d:\Projects\plumber\src\Components\Shared\WhyChooseUs.jsx           | JavaScript JSX |          0 |          4 |          1 |          5 |
+| d:\Projects\plumber\src\Components\Team\Quote.jsx                   | JavaScript JSX |          4 |          3 |          2 |          9 |
+| d:\Projects\plumber\src\Components\Team\TeamMembers.jsx             | JavaScript JSX |          0 |          4 |          3 |          7 |
+| d:\Projects\plumber\src\Layout\Root.jsx                             | JavaScript JSX |          2 |          0 |         -1 |          1 |
+| d:\Projects\plumber\src\Pages\About\About.jsx                       | JavaScript JSX |         -1 |          2 |          0 |          1 |
+| d:\Projects\plumber\src\Pages\BlogDetails\BlogDetails.jsx           | JavaScript JSX |          0 |          1 |          0 |          1 |
+| d:\Projects\plumber\src\Pages\Blog\Blog.jsx                         | JavaScript JSX |         -1 |          1 |          0 |          0 |
+| d:\Projects\plumber\src\Pages\Contact\Contact.jsx                   | JavaScript JSX |          0 |          2 |          0 |          2 |
+| d:\Projects\plumber\src\Pages\Home\Home.jsx                         | JavaScript JSX |          0 |          1 |          0 |          1 |
+| d:\Projects\plumber\src\Pages\Pricing\Pricing.jsx                   | JavaScript JSX |          0 |          2 |          0 |          2 |
+| d:\Projects\plumber\src\Pages\Services\ServiceDetails.jsx           | JavaScript JSX |          0 |          1 |          0 |          1 |
+| d:\Projects\plumber\src\Pages\Services\Services.jsx                 | JavaScript JSX |          0 |          1 |          0 |          1 |
+| d:\Projects\plumber\src\Pages\Team\Team.jsx                         | JavaScript JSX |         -1 |          2 |          1 |          2 |
+| d:\Projects\plumber\src\Router\Router.jsx                           | JavaScript JSX |          1 |          0 |         -1 |          0 |
+| d:\Projects\plumber\tailwind.config.js                              | JavaScript     |          1 |          0 |          0 |          1 |
+| Total                                                               |                |       -496 |         69 |         18 |       -409 |
++---------------------------------------------------------------------+----------------+------------+------------+------------+------------+

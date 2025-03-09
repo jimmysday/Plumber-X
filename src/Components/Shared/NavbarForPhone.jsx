@@ -98,17 +98,17 @@ const NavbarForPhone = () => {
                     Pricing
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link className={navItemStyle} to="/team">
                     Team
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <a
-                    href="tel:(303)555-0107"
+                    href="tel:(604) 720 3999"
                     className="px-4 py-2 mt-2 text-base font-semibold rounded-lg md:mt-0 md:ml-2 hover:underline underline-offset-8 focus:outline-none focus:shadow-outline flex items-center gap-2"
                   >
-                    <IoCall /> (303)555-0107
+                    <IoCall /> (604) 720 3999
                   </a>
                 </li>
               </ul>

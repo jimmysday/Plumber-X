@@ -72,17 +72,17 @@ const HeroSection = () => {
                 Need Help Now? <br /> Call Us!
               </p>
               <a
-                href="tel:(302) 555-0107"
+                href="tel:(604) 720 3999"
                 className="text-xl flex items-center gap-2 mt-4 font-semibold justify-center md:justify-start"
               >
-                <IoCall /> (302) 555-0107
+                <IoCall /> (604) 720 3999
               </a>
             </div>
             <div>
               <p className="font-normal">
                 Need Help Now? <br /> Mail Us!
               </p>
-              <p className="mt-4 font-semibold text-xl">plumber@example.com</p>
+              <p className="mt-4 font-semibold text-xl">jaminzhang99@gmail.com</p>
             </div>
           </div>
         </div>

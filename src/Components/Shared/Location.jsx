@@ -71,8 +71,8 @@ const Location = () => {
               <h2 className="text-lg font-base font-semibold text-gray-900 my-3">
                 Phone Numbers
               </h2>
-              <p className="text-gray-700 text-base">(302) 555-0107</p>
-              <p className="text-gray-700 text-base">plumber@example.com</p>
+              <p className="text-gray-700 text-base">(604) 720 3999</p>
+              <p className="text-gray-700 text-base">jaminzhang99@gmail.com</p>
             </div>
 
             {/* Working Time Info Card */}
@@ -139,8 +139,8 @@ const Location = () => {
             <h2 className="text-lg font-base font-semibold text-gray-900 my-3">
               Phone Numbers
             </h2>
-            <p className="text-gray-700 text-base">(302) 555-0107</p>
-            <p className="text-gray-700 text-base">plumber@example.com</p>
+            <p className="text-gray-700 text-base">(604) 720 3999</p>
+            <p className="text-gray-700 text-base">jaminzhang99@gmail.com</p>
           </div>
 
           {/* Working Time Info Card */}

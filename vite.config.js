@@ -9,6 +9,7 @@ import { viteStaticCopy } from "vite-plugin-static-copy";
 // })
 
 export default defineConfig({
+  base: "/Plumber-X/",
   plugins: [
     react(),
     viteStaticCopy({

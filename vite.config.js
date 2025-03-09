@@ -15,5 +15,5 @@ export default defineConfig({
       targets: [{ src: "dist/index.html", dest: "dist/404.html" }],
     }),
   ],
-  base: "/Plumber-X/", // 重要！GitHub Pages 需要设置 base 路径
+  base: "Plumber-X/", // 重要！GitHub Pages 需要设置 base 路径
 });
